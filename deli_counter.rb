@@ -11,14 +11,15 @@ def line
 end
 
 def take_a_number(line,customer)
-  
+  line.push(customer)
+  puts "#{customer}, you are number #{line.size} in line."
+end
 
-var katzDeliLine = []
-
-function takeANumber(katzDeliLine,customer){
-  katzDeliLine.push(customer)
-  return `Welcome, ${customer}. You are number ${katzDeliLine.length} in line.` 
-}
+def now_serving(line)
+  if line.size > 0
+    puts "Now serving #{line[0]}!"
+  else
+    puts "There is nobody waiting to be served!"
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0){
