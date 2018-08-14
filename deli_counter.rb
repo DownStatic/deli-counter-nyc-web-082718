@@ -3,11 +3,15 @@
 katz_deli = []
 
 def line(katz_deli)
-  order = "The line is currently"
-  count = 1
-  katz_deli.each do |customer|
-    order = order + " #{count}. #{customer}"
-    count = count + 1
+  if katz_deli.size == 0
+    puts "The line is currently empty"
+  else
+    order = "The line is currently"
+    count = 1
+    katz_deli.each do |customer|
+      order = order + " #{count}. #{customer}"
+      count = count + 1
+    end
   end
   puts order
 end
