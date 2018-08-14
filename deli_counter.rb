@@ -6,7 +6,7 @@ def line(katz)
   if katz.size == 0
     puts "The line is currently empty."
   else
-    order = "The line is currently"
+    order = "The line is currently:"
     count = 1
     katz.each do |customer|
       order = order +" #{count}. #{customer}"
