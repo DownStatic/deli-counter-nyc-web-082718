@@ -5,7 +5,6 @@ katz_deli = []
 def line(katz)
   if katz.size == 0
     puts "The line is currently empty."
-    break
   else
     order = "The line is currently"
     count = 1
@@ -13,8 +12,8 @@ def line(katz)
       order.push(" #{count}. #{customer}")
       count = count + 1
     end
+    puts order
   end
-  puts order
 end
 
 def take_a_number(katz_deli,customer)
