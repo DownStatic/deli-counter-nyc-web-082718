@@ -2,6 +2,17 @@
 
 katz_deli = []
 
+def line
+  count = 1
+  katz_deli.each do |customer|
+    puts "#{customer}, you are number #{count} in line."
+    count = count + 1
+  end
+end
+
+def take_a_number(line,customer)
+  
+
 var katzDeliLine = []
 
 function takeANumber(katzDeliLine,customer){
