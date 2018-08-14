@@ -1,15 +1,16 @@
 # Write your code here.
 
+katz_deli = []
 
-def line(katz_deli)
-  if katz_deli.size == 0
+def line(katz)
+  if katz.size == 0
     puts "The line is currently empty."
     break
   else
     order = "The line is currently"
     count = 1
-    katz_deli.each do |customer|
-      order = order + " #{count}. #{customer}"
+    katz.each do |customer|
+      order.push(" #{count}. #{customer}")
       count = count + 1
     end
   end
