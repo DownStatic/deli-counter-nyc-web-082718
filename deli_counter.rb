@@ -9,7 +9,7 @@ def line(katz)
     order = "The line is currently"
     count = 1
     katz.each do |customer|
-      order.push(" #{count}. #{customer}")
+      order = order +" #{count}. #{customer}"
       count = count + 1
     end
     puts order
